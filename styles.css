@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column; /* Vertikal ordning */
+    align-items: center; /* Centrera innehållet */
+    text-align: left;
+}
+
+#word-container {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#guess-input {
+    margin-top: 10px; /* Minska marginalen mellan input och bild */
+    font-size: 18px;
+    padding: 5px;
+}
+
+#hangman {
+    width: 200px;
+    height: 250px;
+    margin: 20px 0; /* Justera marginalen så den är jämn ovanför och nedanför */
+    display: block;
+}
+
+#head, #body, #arms, #legs, #scaffold {
+    display: none;
+}
+
+#head.visible, #body.visible, #arms.visible, #legs.visible, #scaffold.visible {
+    display: block;
+}
+
+#wrong-guesses {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+#message.win {
+    color: green;
+}
